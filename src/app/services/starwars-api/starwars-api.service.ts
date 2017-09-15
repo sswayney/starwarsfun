@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Person} from '../models/person';
+import {Person} from '../../models/person';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -12,9 +12,15 @@ export class StarwarsApiService {
   constructor(private http: HttpClient) {
   }
 
-  get(id: string): Promise<Person> {
+  getPerson(id: string): Promise<Person> {
     return this.http.get<Person>(`${this.url}/people/${id}`)
       .toPromise();
   }
+
+  getSpecies(id: string): Promise<Person> {
+    return this.http.get<Person>(`${this.url}/species/${id}`)
+      .toPromise();
+  }
+
 
 }

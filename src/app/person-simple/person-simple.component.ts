@@ -8,7 +8,7 @@ import {Person} from "../models/person";
 })
 export class PersonSimpleComponent implements OnInit {
 
-  @Input() person: Person;
+  @Input() simplePerson: Person;
 
   constructor() { }
 

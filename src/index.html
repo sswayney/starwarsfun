@@ -5,6 +5,19 @@
   <title>Starwarsfun</title>
   <base href="/">
 
+
+  <script>
+    //    Todo: ngx-store config maybe place in webpack
+    var NGXSTORE_CONFIG = {
+      prefix: 'starwarsfun',      // default: 'ngx_'
+      clearType: 'prefix', // default: 'prefix'
+      mutateObjects: true, // default: true
+      debugMode: false,    // you can enable debug logs if you ever meet any bug to localize its source
+      cookiesScope: '',    // what you pass here will actually prepend base domain
+      previousPrefix: 'angular2ws_', // you have to set it only if you were using custom prefix in old version ('angular2ws_' is a default value)
+    };
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>

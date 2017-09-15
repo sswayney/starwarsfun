@@ -1,4 +1,8 @@
 <p>
   home works!
-  and the person is <person-simple [person]="person"></person-simple>
+  <br>
+  <label>Your name is: </label>
+  <input [(ngModel)]="username" placeholder="tell me your name"/>
+  <br>
+  and the person is <person-simple [simplePerson]="person"></person-simple>
 </p>

@@ -26,7 +26,8 @@
     "zone.js": "^0.8.4",
     "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.2.1",
-    "popper.js": "^1.12.5"
+    "popper.js": "^1.12.5",
+    "ngx-store": "^1.1.10"
   },
   "devDependencies": {
     "@angular/cli": "1.2.1",
