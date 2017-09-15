@@ -2,7 +2,7 @@ export interface Person {
   name: string;
   gender: string;
   birth_year: string;
-  homeworld: string;
+  homeworld: any;
   films: string[];
   species: string[];
   vehicles: string[];
