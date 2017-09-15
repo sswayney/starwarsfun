@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { StarwarsApiService } from '../services/starwars-api.service';
-import {People} from "../models/people";
+import {Person} from "../models/person";
 
 @Component({
   selector: 'app-home',
@@ -10,7 +10,7 @@ import {People} from "../models/people";
 })
 export class HomeComponent implements OnInit {
 
-  person: People;
+  person: Person;
 
   constructor(private swApiService: StarwarsApiService) { }
 
